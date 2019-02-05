@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ItemTitle"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        android:layout_toRightOf="@+id/ItemImage"
+        android:layout_alignRight="@+id/ItemText"
+        android:layout_alignEnd="@+id/ItemText" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/ItemImage"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignTop="@+id/ItemTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/ItemeditText"
+        android:hint="快来说点什么吧..."
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:background="@drawable/editext"
+        android:textColor="#333333"
+        android:layout_below="@+id/ItemDiscuss"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        style="@android:style/Widget.DeviceDefault.EditText" />
+
+    <TextView
+        android:id="@+id/ItemText"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ItemImage"
+        android:layout_toRightOf="@+id/ItemImage"
+        android:layout_toEndOf="@+id/ItemImage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ItemDiscuss"
+        android:textSize="14sp"
+        android:textColor="@android:color/holo_blue_dark"
+        tools:text="                                "
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/ItemText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:id="@+id/Itembutton2"
+        android:text="评论"
+        android:background="@drawable/button_shape"
+        android:layout_alignBaseline="@+id/ItemButton"
+        android:layout_alignBottom="@+id/ItemButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ItemButton"
+        android:focusable="false"
+        android:text="点赞"
+        android:background="@drawable/button_shape"
+        android:layout_below="@+id/ItemeditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button65"
+        android:text="关注"
+        android:background="@drawable/button_shape"
+        android:layout_below="@+id/ItemeditText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="   "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ItemButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView68"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

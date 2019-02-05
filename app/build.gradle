@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "com.luwei.testjusttalk"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.2"
+    }
+    sourceSets {
+        main {
+//            可能会用到的配置
+//            manifest.srcFile 'AndroidManifest.xml'
+//            java.srcDirs = ['src']
+//            resources.srcDirs = ['src']
+//            aidl.srcDirs = ['src']
+//            renderscript.srcDirs = ['src']
+//            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile project(':juslibs')
+    compile(name: 'juslogin', ext: 'aar')
+    compile(name: 'juscall', ext: 'aar')
+    compile(name: 'jusdoodle', ext: 'aar')
+    compile files('libs/bcprov-jdk15on-152.jar')
+    compile 'com.google.android.gms:play-services-gcm:8.3.0'
+    compile files('libs/activation.jar')
+    compile files('libs/additionnal.jar')
+    compile files('libs/commons-email-1.2.jar')
+    compile files('libs/ksoap2-android-assembly-3.1.0-jar-with-dependencies.jar')
+    compile files('libs/mail.jar')
+    compile files('libs/MobCommons-2016.0303.1229.jar')
+    compile files('libs/MobTools-2016.0303.1229.jar')
+    compile files('libs/SMSSDK-2.0.2.jar')
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rand_friends"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="wxhnc.RandFriends">
+
+    <TextView
+        android:text="这一瞬间，我遇上了你。        "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView66" />
+
+    <TextView
+        android:text="时间不给力，再来一次！"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView66"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="135dp"
+        android:id="@+id/textView67"
+        android:textSize="24sp"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:text="邀请唱歌"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button95"
+        android:background="@drawable/button_shape"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/button92"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@+id/button94"
+        android:layout_toEndOf="@+id/button94"
+        android:layout_marginLeft="8dp" />
+
+    <Button
+        android:text="发送消息"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button92"
+        android:background="@drawable/button_shape"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/textView66"
+        android:layout_toEndOf="@+id/textView66"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp" />
+
+    <Button
+        android:text="重新随机"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button93"
+        android:background="@drawable/button_shape"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/textView66"
+        android:layout_toStartOf="@+id/textView66"
+        android:layout_marginRight="28dp"
+        android:layout_marginEnd="28dp" />
+
+    <Button
+        android:text="加关注"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button94"
+        android:background="@drawable/button_shape"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/button93"
+        android:layout_toRightOf="@+id/button93" />
+</RelativeLayout>

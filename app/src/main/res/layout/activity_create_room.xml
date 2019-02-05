@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_room"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="wxhnc.CreateRoom">
+
+    <TextView
+        android:text="房间名称："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp"
+        android:id="@+id/textView33" />
+
+    <Button
+        android:text="创建"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button35"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignTop="@+id/textView33"
+        android:id="@+id/editText16"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView33" />
+
+    <TextView
+        android:text="房间密码："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:id="@+id/textView35"
+        android:layout_below="@+id/textView34"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="允许观看："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/textView34"
+        android:layout_below="@+id/editText16"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editText17"
+        android:layout_alignTop="@+id/textView35"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView35" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView34"
+        android:layout_toEndOf="@+id/textView35">
+
+        <RadioButton
+            android:text="是"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton5"
+            android:layout_weight="1"
+            android:layout_alignTop="@+id/textView34"
+            android:layout_toEndOf="@+id/textView34" />
+
+        <RadioButton
+            android:text="否"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:id="@+id/radioButton6"
+            android:layout_alignBottom="@+id/radioButton5" />
+    </RadioGroup>
+
+</RelativeLayout>

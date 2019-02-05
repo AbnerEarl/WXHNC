@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.luwei.testjusttalk">
+
+    <!-- 录音权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Mi -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <permission
+        android:name="com.justalk.cloud.sample.android.call.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.justalk.cloud.sample.android.call.permission.MIPUSH_RECEIVE" />
+
+    <!-- GCM -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.justalk.cloud.sample.android.call.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.justalk.cloud.sample.android.call.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".application.JusApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/wxhnc"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="wxhnc.Start"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.LoginActivity"
+            android:label="创建房间" />
+        <activity android:name=".ui.MainActivity" />
+        <activity
+            android:name="com.justalk.cloud.juscall.CallActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.justalk.cloud.jusdoodle.DoodleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.justalk.cloud.jusdoc.JusDocDetailActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+        <service android:name="com.justalk.cloud.juspush.MtcService" />
+        <service android:name="com.justalk.cloud.juscall.FloatWindowService" />
+
+        <!-- Mi -->
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"
+            android:enabled="true"
+            android:process=":pushservice" />
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+            android:enabled="true" />
+        <!-- 注：此service必须在2.2.5版本以后（包括2.2.5版本）加入 -->
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false"
+            android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.justalk.cloud.juspush.MiPushMessageReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+
+        <!-- GCM -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.justalk.cloud.sample.android" />
+
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.justalk.cloud.juspush.GcmListenerService2"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.justalk.cloud.juspush.GcmInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.justalk.cloud.juspush.GcmRegistrationIntentService"
+            android:exported="false" />
+
+        <activity
+            android:name="wxhnc.Loginn"
+            android:label=" " />
+        <activity
+            android:name="wxhnc.ForggetPassword"
+            android:label="找回密码" />
+        <activity
+            android:name="wxhnc.Home"
+            android:label="有听见你的声音" />
+        <activity
+            android:name="wxhnc.Ranking"
+            android:label="好声音排行榜" />
+        <activity
+            android:name="wxhnc.Sing"
+            android:label="音乐心声" />
+        <activity
+            android:name="wxhnc.Chat"
+            android:label="聊吧系统" />
+        <activity
+            android:name="wxhnc.Me"
+            android:label="我的世界" />
+        <activity
+            android:name="wxhnc.ApplicationLoad"
+            android:label="" />
+        <activity
+            android:name="wxhnc.SmartChat"
+            android:label="智能聊天系统" />
+        <activity
+            android:name="wxhnc.SearchFriend"
+            android:label="查询歌友" />
+        <activity
+            android:name="wxhnc.Fllower"
+            android:label="我的粉丝" />
+        <activity
+            android:name="wxhnc.Carer"
+            android:label="我的关注" />
+        <activity
+            android:name="wxhnc.RandFriends"
+            android:label="缘来是你" />
+        <activity
+            android:name="wxhnc.Matching"
+            android:label="心跳匹配" />
+        <activity
+            android:name="wxhnc.MyMessage"
+            android:label="我的消息" />
+        <activity
+            android:name="wxhnc.PsersonalInfomation"
+            android:label="个性设计" />
+        <activity
+            android:name="wxhnc.MyProduct"
+            android:label="我的作品" />
+        <activity
+            android:name="wxhnc.MyHonour"
+            android:label="我的荣誉" />
+        <activity
+            android:name="wxhnc.HistoryAndNow"
+            android:label="历史今天" />
+        <activity
+            android:name="wxhnc.SafeSetting"
+            android:label="安全设置" />
+        <activity
+            android:name="wxhnc.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name="wxhnc.ThemeSetting"
+            android:label="主题设置" />
+        <activity
+            android:name="wxhnc.CreateRoom"
+            android:label="创建房间" />
+        <activity
+            android:name="wxhnc.RoomNext"
+            android:label="房间环境" />
+        <activity
+            android:name="wxhnc.SingPrepare"
+            android:label="开始演唱" />
+        <activity
+            android:name="wxhnc.SingComplete"
+            android:label="演唱完成" />
+        <activity
+            android:name="wxhnc.SingleSing"
+            android:label="我要独奏" />
+        <activity
+            android:name="wxhnc.WatchSing"
+            android:label="现场观看" />
+        <activity
+            android:name="wxhnc.ReceiveInvite"
+            android:label="收到邀请" />
+        <activity
+            android:name="wxhnc.Regesiter"
+            android:label="注册中心" />
+        <activity
+            android:name=".Main3Activity"
+            android:label="" />
+        <activity android:name=".StartSing"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            />
+        <activity android:name=".RecordSong" />
+        <activity android:name=".MessageReturn"></activity>
+    </application>
+
+</manifest>

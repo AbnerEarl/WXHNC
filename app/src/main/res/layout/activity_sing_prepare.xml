@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sing_prepare"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="wxhnc.SingPrepare">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView40">
+
+        <RadioButton
+            android:text="是"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton7"
+            android:layout_alignBaseline="@+id/textView40"
+            android:layout_alignBottom="@+id/textView40"
+            android:layout_toEndOf="@+id/textView40"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="否"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/radioButton7"
+            android:layout_toEndOf="@+id/radioButton7"
+            android:id="@+id/radioButton8"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <TextView
+        android:text="录制视屏："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView40"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="22dp" />
+
+    <TextView
+        android:text="开启原唱："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView40"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView44" />
+
+    <TextView
+        android:text="当前歌曲：刚刚好-薛之谦"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView45" />
+
+    <VideoView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView45"
+        android:id="@+id/videoView"
+        android:layout_above="@+id/textView50"
+        android:layout_toStartOf="@+id/textView51" />
+
+    <VideoView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView45"
+        android:layout_toEndOf="@+id/videoView"
+        android:id="@+id/videoView2"
+        android:layout_above="@+id/textView51" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/textView51"
+        android:layout_marginStart="15dp">
+
+        <RadioButton
+            android:text="否"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton11"
+            android:layout_alignBottom="@+id/textView44"
+            android:layout_alignEnd="@+id/textView45"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:text="是"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView44"
+            android:layout_toEndOf="@+id/textView44"
+            android:id="@+id/radioButton10"
+            android:layout_weight="1" />
+
+    </RadioGroup>
+
+    <Button
+        android:text="录制完成"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/button39"
+        android:background="@drawable/button_shape"/>
+
+    <TextView
+        android:text="perfect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button39"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/textView52" />
+
+    <TextView
+        android:text="贵友"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView51"
+        android:layout_above="@+id/textView52"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="房主"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView50"
+        android:layout_alignBaseline="@+id/textView51"
+        android:layout_alignBottom="@+id/textView51"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="歌词显示在这个视频的上面，下面分别显示房主和受邀的人的视屏。"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="118dp"
+        android:id="@+id/textView53"
+        android:textColor="@android:color/holo_blue_bright"
+        android:layout_below="@+id/textView45"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp" />
+
+</RelativeLayout>

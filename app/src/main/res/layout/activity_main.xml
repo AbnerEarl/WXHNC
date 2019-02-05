@@ -1,0 +1,215 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/rg_talk_auto"
+        android:orientation="horizontal"
+        android:checkedButton="@+id/rb_talk_auto_video"
+        android:visibility="invisible"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:id="@+id/rb_talk_auto_off"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="off" />
+
+        <RadioButton
+            android:id="@+id/rb_talk_auto_audio"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="with audio" />
+
+        <RadioButton
+            android:id="@+id/rb_talk_auto_video"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="with video"
+            android:checked="true" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_talk_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="输入好友帐号或选择一个好友，进行邀请K歌！"
+        android:layout_alignParentTop="true"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:id="@+id/bt_talk_audio"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.85"
+            android:text="仅仅录制声音"
+            android:background="@drawable/button_shape"
+            android:layout_marginRight="10dp" />
+
+        <Button
+            android:id="@+id/bt_talk_video"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.82"
+            android:text="录制现场视频"
+            android:background="@drawable/button_shape"
+            android:layout_marginLeft="10dp" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_talk_bity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:id="@+id/rb_talk_bity_nano"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="nano" />
+
+        <RadioButton
+            android:id="@+id/rb_talk_bity_min"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="min" />
+
+        <RadioButton
+            android:id="@+id/rb_talk_bity_low"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="low" />
+
+        <RadioButton
+            android:id="@+id/rb_talk_bity_mid"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="mid" />
+
+        <RadioButton
+            android:id="@+id/rb_talk_bity_720p"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="720p" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rg_talk_mack"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="54dp"
+        android:layout_below="@+id/rg_talk_bity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:id="@+id/rb_talk_mack_low"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="low" />
+
+        <RadioButton
+            android:id="@+id/rb_talk_mack_mid"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="mid" />
+
+        <RadioButton
+            android:id="@+id/rb_talk_mack_high"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="high" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="音量大小："
+        android:layout_below="@+id/rg_talk_bity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="41dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择以下录制模式，准备开始演唱："
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/rg_talk_mack"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="效果质量："
+        android:layout_above="@+id/rg_talk_bity"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/et_talk_number"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/bt_talk_doodle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="邀请歌友"
+            android:background="@drawable/button_shape"/>
+
+        <Button
+            android:id="@+id/bt_talk_record"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:text="选择好友："
+            android:visibility="visible"
+            android:background="@android:color/transparent" />
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner"
+            android:layout_weight="1.46" />
+
+    </LinearLayout>
+
+</RelativeLayout>

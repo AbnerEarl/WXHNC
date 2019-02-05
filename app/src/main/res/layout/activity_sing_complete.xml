@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sing_complete"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="wxhnc.SingComplete">
+
+    <TextView
+        android:text="徐良和本兮共同演唱了"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView41"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="刚刚好-薛之谦"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView42"
+        android:layout_below="@+id/textView41"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:text="私密上传"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button41"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button_shape"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:text="公开发布"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button40"
+        android:layout_above="@+id/button41"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/button_shape"/>
+
+    <Button
+        android:text="保存"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button44"
+        android:layout_above="@+id/button41"
+        android:layout_marginBottom="69dp"
+        android:layout_alignStart="@+id/button43"
+        android:background="@drawable/button_shape"/>
+
+    <Button
+        android:text="删除"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button43"
+        android:layout_above="@+id/button44"
+        android:layout_marginBottom="73dp"
+        android:layout_alignStart="@+id/button42"
+        android:background="@drawable/button_shape"/>
+
+    <Button
+        android:text="试听"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button42"
+        android:layout_below="@+id/textView42"
+        android:layout_toEndOf="@+id/textView41"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/button_shape"/>
+
+    <TextView
+        android:text="              "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView46"
+        android:layout_alignTop="@+id/button40"
+        android:layout_centerHorizontal="true" />
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/videoView4"
+        android:layout_alignTop="@+id/button42"
+        android:layout_alignBottom="@+id/button44"
+        android:layout_toLeftOf="@+id/button44"
+        android:layout_toStartOf="@+id/button44" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView557"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@mipmap/background_7"
+        android:layout_alignTop="@+id/button42"
+        android:layout_toLeftOf="@+id/button44"
+        android:layout_toStartOf="@+id/button44"
+        android:layout_alignBottom="@+id/button44" />
+    <com.luwei.testjusttalk.view.impl.LrcView
+        android:id="@+id/lrcView57"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_alignBottom="@+id/button44"
+        android:layout_toLeftOf="@+id/button44"
+        android:layout_toStartOf="@+id/button44"
+        android:layout_alignTop="@+id/button42" />
+</RelativeLayout>

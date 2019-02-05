@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:text="K歌"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button66"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/common_google_signin_btn_text_dark_default" />
+
+    <TextView
+        android:text="刚刚好-薛之谦"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:id="@+id/textView58"
+        android:layout_weight="0.30"
+        android:textSize="18sp"
+        android:textColor="@color/common_google_signin_btn_text_light_focused"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:layout_alignBaseline="@+id/button66"
+        android:layout_alignBottom="@+id/button66"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/button66"
+        android:layout_toStartOf="@+id/button66" />
+
+</RelativeLayout>

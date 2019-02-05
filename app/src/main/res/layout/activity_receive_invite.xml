@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_receive_invite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="wxhnc.ReceiveInvite">
+
+    <Button
+        android:text="拒绝"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button55"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_shape"
+        android:visibility="visible"
+        android:layout_toLeftOf="@+id/button56"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="接受"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button57"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_shape"
+        android:visibility="visible"
+        android:layout_toRightOf="@+id/button56"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="来自“不想和你做朋友”的邀请："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView48"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:text="邀请你共同演唱“十年”！"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:id="@+id/textView49"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_below="@+id/textView48"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="2017年2月15日    12：52"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView49"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="66dp"
+        android:id="@+id/textView59" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button56"
+        android:background="@drawable/button_shape"
+        android:text="忽略" />
+
+</RelativeLayout>

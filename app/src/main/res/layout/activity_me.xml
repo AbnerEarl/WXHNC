@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_me"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="0dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="wxhnc.Me"
+    android:background="@android:color/background_light">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/button19"
+
+        android:background="@drawable/data"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button19"
+        android:id="@+id/button20"
+
+        android:background="@drawable/product"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button20"
+        android:id="@+id/button21"
+
+        android:background="@drawable/honor"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button22"
+        android:layout_below="@+id/button21"
+
+        android:background="@drawable/history"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button22"
+        android:id="@+id/button25"
+
+        android:background="@drawable/safe"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button26"
+        android:id="@+id/button27"
+
+        android:background="@drawable/main"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button27"
+        android:id="@+id/button28"
+
+        android:background="@drawable/invit"
+        android:singleLine="true"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button26"
+        android:layout_below="@+id/button25"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/climate"
+        style="@style/Widget.AppCompat.Button.Borderless" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button815"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:textColor="@android:color/background_dark"
+        android:background="@drawable/menu11"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button915"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:textColor="@android:color/background_dark"
+        android:background="@drawable/menu22"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button815"
+        android:layout_toEndOf="@+id/button815" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button64"
+        android:background="@drawable/menu33"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button915"
+        android:layout_toEndOf="@+id/button915" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1015"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:textColor="@android:color/background_dark"
+        android:background="@drawable/menu44"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button64"
+        android:layout_toEndOf="@+id/button64" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1115"
+        android:textColor="@color/colorAccent"
+        android:background="@drawable/menu5"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button1015"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
